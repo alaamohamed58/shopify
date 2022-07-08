@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--google font open sans serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Oswald:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--font awesome-->
+
+    <link rel=" stylesheet" href="css/all.min.css" />
+
+    <!--Normalize-->
+
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!--main style sheet-->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/wishlist.css" />
+
+    <!--responsive sheet-->
+    <link
+      rel="stylesheet"
+      media="screen and (min-device-width: 991px)"
+      href="css/responsive.css"
+    />
+
+    <!-- icon -->
+
+    <link
+      rel="shortcut icon"
+      href="//cdn.shopify.com/s/files/1/0602/8705/8111/files/logo_396cbdfa-5f8d-4dda-a341-aa7ffb511e0f_32x32.png?v=1634374754"
+      type="image/png"
+    />
+
+    <title>My-shopify</title>
+  </head>
+  <body>
+    <nav id="navMobile">
+      <ul>
+        <li>
+          <i class="fa-solid fa-house"></i>
+          <span>home</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-heart"></i>
+          <span>whishlist</span>
+        </li>
+        <li style="position: relative" class="cart-mobile">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span
+            id="badge"
+            style="width: 15px; height: 15px; right: 0; font-size: 15px"
+            class="cart-items"
+            >0</span
+          >
+          <span>cart</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-gear"></i>
+          <span>settings</span>
+        </li>
+        <li>
+          <i class="fa-solid fa-circle-arrow-up"></i>
+          <span>go top</span>
+        </li>
+      </ul>
+    </nav>
+    <div id="overlay"></div>
+    <!--cart list-->
+    <div id="cart-items">
+      <button><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="items">
+        <ul class="list"></ul>
+      </div>
+      <div class="total-content">
+        <h4>total price</h4>
+        <span class="total-price">$0</span>
+      </div>
+    </div>
+    <!--start header-->
+    <header>
+      <div class="top-header">
+        <div class="container">
+          <div class="flex-box">
+            <div class="contact-icons">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-pinterest"></i> </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-dribbble"></i> </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="announcemnet">
+              <p>FREE SHIPPING FOR ORDER ABOVE $200. SHOP NOW !</p>
+            </div>
+
+            <div class="actions">
+              <a href="" class="wishlist">
+                <i class="fa-solid fa-heart"></i>
+                <span class="title">wishlist</span>
+              </a>
+              <div class="currency-selector">
+                <div class="menu-toggle">
+                  <span class="title">USD</span>
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div class="drobdown-list">
+                  <ul>
+                    <li class="selected">USD</li>
+                    <li>EUR</li>
+                    <li>GBP</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="account-sign">
+                <a href="#">login</a>
+                <a href="#">register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start mid header-->
+      <div class="mid-header">
+        <div class="container">
+          <div class="flex-box">
+            <div class="logo">
+              <a href="#"> <img src="images/logo_166x.webp" alt="logo" /> </a>
+            </div>
+            <div class="search-input">
+              <form method="get" action="">
+                <div class="actions">
+                  <input type="text" placeholder="Enter Your Key word" />
+                  <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="search-trend">
+                  <ul>
+                    <li><a href="#">face mask</a></li>
+                    <li><a href="#">microwave</a></li>
+                    <li><a href="#">iphone13</a></li>
+                    <li><a href="#">smartwatch</a></li>
+                    <li><a href="#">mackbook pro</a></li>
+                    <li><a href="#">christmas</a></li>
+                  </ul>
+                </div>
+              </form>
+            </div>
+            <div class="show-menu"><i class="fa-solid fa-bars"></i></div>
+
+            <div class="services">
+              <div class="customar-care">
+                <i class="fas fa-headphones"></i>
+                <div class="texts">
+                  <div>Customer Support 24/7</div>
+                  <div>call us Now : <span>09000000</span></div>
+                </div>
+              </div>
+              <div class="cart">
+                <div class="cart-icons">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-items">0</span>
+                </div>
+                <div class="texts">
+                  <div>YOUR CART</div>
+                  <div>Total : <span class="total-price">$0</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-header">
+        <div class="container">
+          <div class="flex-box">
+            <div class="categories">
+              <div class="categries-btn">
+                <i class="fa-solid fa-bars"></i> <span>categories</span>
+              </div>
+              <div class="b-list">
+                <ul>
+                  <li><i class="fa-solid fa-lightbulb"></i>home appliance</li>
+                  <li>
+                    <i class="fa-solid fa-charging-station"></i>electronics
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-headphones"></i>audio & sound devices
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-mobile-screen"></i>smartphone &
+                    tablets
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-gamepad"></i>game devices &
+                    accessories
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-shield-halved"></i>security devices
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-computer"></i>computer and networking
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-laptop"></i>laptops & accessories
+                  </li>
+                  <li><i class="fa-solid fa-clock"></i>smart watches</li>
+                  <li><i class="fa-solid fa-briefcase"></i>office devices</li>
+                  <li class="hide">
+                    <i class="fa-solid fa-camera"></i>cameras & photo
+                  </li>
+                  <li class="hide">
+                    <i class="fa-solid fa-tv"></i>monitor & television
+                  </li>
+                  <li class="hide">
+                    <i class="fa-solid fa-house"></i>smart home
+                  </li>
+
+                  <li id="ellipsis" class="ellipsis">
+                    <i class="fa-solid fa-ellipsis"></i>less than
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav>
+              <div class="close-menu">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">laptop</a></li>
+                <li><a href="#">smartphone</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="landing">
+      <div class="text">
+        <h1>PAGE WISHLIST</h1>
+      </div>
+    </section>
+
+    <!--wishlist-->
+    <section class="wishlist">
+      <div class="container">
+        <h2>Wish List</h2>
+        <div class="head-title">
+          <ul>
+            <li>
+              <span><i class="fa-solid fa-heart"></i></span>
+              YOUR FAVORITE PRODUCTS
+            </li>
+            <li>
+              <span><i class="fa-solid fa-dollar-sign"></i></span> PRICE
+            </li>
+            <li>
+              <span><i class="fa-solid fa-trash"></i></span> REMOVE
+            </li>
+            <li>
+              <span><i class="fa-solid fa-cart-shopping"></i></span> ADD TO CART
+            </li>
+          </ul>
+        </div>
+        <div class="list">
+          <ul>
+            <li>
+              <div class="products smart">
+                <div class="prod-img">
+                  <img src="images/fridge.webp" alt="" />
+                </div>
+                <div class="details">
+                  <span class="price">$1200.00</span>
+                </div>
+                <div class="actions">
+                  <button id="remove">Remove</button>
+                  <button id="add-wish-cart">Add to cart</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--footer policy-->
+    <section class="footer-policy">
+      <div class="content">
+        <div class="col">
+          <div class="img">
+            <img src="images/p-7_40x.webp" alt="icon" />
+          </div>
+          <div class="text">
+            <h4>ACCEPTING ORDERS 24/7</h4>
+            <span>LOREM IPSUM DOLOR</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="images/p-7_40x.webp" alt="icon" />
+          </div>
+          <div class="text">
+            <h4>ACCEPTING ORDERS 24/7</h4>
+            <span>LOREM IPSUM DOLOR</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="images/p-7_40x.webp" alt="icon" />
+          </div>
+          <div class="text">
+            <h4>ACCEPTING ORDERS 24/7</h4>
+            <span>LOREM IPSUM DOLOR</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="images/p-7_40x.webp" alt="icon" />
+          </div>
+          <div class="text">
+            <h4>ACCEPTING ORDERS 24/7</h4>
+            <span>LOREM IPSUM DOLOR</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="img">
+            <img src="images/p-7_40x.webp" alt="icon" />
+          </div>
+          <div class="text">
+            <h4>ACCEPTING ORDERS 24/7</h4>
+            <span>LOREM IPSUM DOLOR</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <!--top footer-->
+        <div class="top-footer">
+          <div class="sec">
+            <div class="footer-menu">
+              <div class="title-block">
+                <h3>customer service</h3>
+                <button>+</button>
+              </div>
+              <ul>
+                <li><a href="#"> contact us </a></li>
+                <li><a href="#"> help and advice </a></li>
+                <li><a href="#"> shipping & returns </a></li>
+                <li><a href="#"> terms and conditions </a></li>
+                <li><a href="#"> refund policy </a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <div class="title-block">
+                <h3>information</h3>
+                <button>+</button>
+              </div>
+              <ul>
+                <li><a href="#"> about us </a></li>
+                <li><a href="#"> testimonials </a></li>
+                <li><a href="#"> my account </a></li>
+                <li><a href="#"> payment and returns</a></li>
+                <li><a href="#"> view catalogues online </a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <div class="title-block">
+                <h3>about us</h3>
+                <button>+</button>
+              </div>
+              <ul>
+                <li><a href="#"> who we are </a></li>
+                <li><a href="#"> corporate responsibility</a></li>
+                <li><a href="#"> califotnia laws </a></li>
+                <li><a href="#"> careers </a></li>
+                <li><a href="#"> privacy policy </a></li>
+              </ul>
+            </div>
+            <div class="footer-menu">
+              <div class="title-block">
+                <h3>newsletter</h3>
+                <button>+</button>
+              </div>
+              <ul>
+                <li>
+                  <p>
+                    Sign up for newsletter to receive special offers and
+                    exclusive news about Metros produc
+                  </p>
+                </li>
+                <li>
+                  <form action="">
+                    <input
+                      type="email"
+                      name="mail"
+                      placeholder="Enter your email"
+                    />
+                    <button type="submit">subscribe</button>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--mid footer-->
+      <div class="mid-footer">
+        <div class="container">
+          <div class="cont">
+            <div class="payment">
+              <span>payment accept : </span>
+              <img src="images/payment_300x.webp" alt="payment" />
+            </div>
+            <div class="follow-us">
+              <span>follow us :</span>
+              <div>
+                <ul>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-facebook"></i> </a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i> </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                  </li>
+                  <li>
+                    <a href="#"> <i class="fa-brands fa-dribbble"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="certificate">
+              <img src="images/certificate_500x.webp" alt="certificate" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <div class="container">
+          <p>
+            PRODUCT LISTING POLICY - INTELLECTUAL PROPERTY PROTECTION - PRIVACY
+            POLICY - TERMS OF USE - USER INFORMATION LEGAL ENQUIRY GUIDE
+          </p>
+          <p>Copyright © 2022 Alaa Mohamed. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/wishlist.js"></script>
+  </body>
+</html>
